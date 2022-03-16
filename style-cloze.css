@@ -53,3 +53,7 @@ hr {
 #qa::-webkit-scrollbar {
   display: none;
 }
+
+.cloze {
+  color: #fb4934;
+}
