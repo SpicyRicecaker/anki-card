@@ -1,0 +1,49 @@
+html {
+  width: 100%;
+  height: 100%;
+
+  /* adds space for the picture around the flashcard */
+  box-sizing: border-box;
+  padding: 1rem;
+
+  /* adds a centered background image */
+  background-image: url(_lake.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  image-rendering: pixelated;
+
+  user-select: none;
+}
+
+hr {
+  border: 1px dashed white;
+  opacity: 50%;
+  background-color: transparent;
+}
+
+.card {
+  /* styling for the box */
+  font-family: helvetica;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  background-color: transparent;
+
+  max-height: 100%;
+
+  /* adds padding around the box */
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0;
+}
+
+.card.nightMode {
+  color: white;
+  background-color: rgb(0, 0, 0, 0.45);
+}
+
+#qa {
+  max-height: 100%;
+  overflow-y: scroll;
+}
