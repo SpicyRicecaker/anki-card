@@ -7,7 +7,7 @@ html {
   padding: 1rem;
 
   // adds a centered background image
-  background-image: url(_lake.jpeg);
+  background-image: url(_city.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,8 +36,28 @@ hr {
   // makes sure that content is put inside the textbox instead of bleeding
   // outside the screen
   display: flex;
+  flex-direction: column;
   max-height: 100%;
+
   & > #qa {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & > div {
+      flex: 1;
+    }
+
+    & > .front {
+      order: -1;
+    }
+
+    &:before {
+      content: "";
+      border: 1px solid #d3d3d3;
+      align-self: stretch;
+    }
+
     overflow-y: auto;
     overflow-x: hidden;
     // hide scrollbar
@@ -55,8 +75,8 @@ hr {
     color: white;
     background-color: rgb(28, 19, 25, 0.5);
   }
+}
 
-  &.cloze {
-    color: #aaecfd;
-  }
+.cloze {
+  color: #aaecfd;
 }
